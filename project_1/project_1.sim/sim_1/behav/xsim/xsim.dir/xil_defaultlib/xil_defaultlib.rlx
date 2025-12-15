@@ -1,0 +1,20 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1715791826,verilog,,,,clk_wiz_0,,,../../../../project_1.gen/sources_1/ip/clk_wiz_0,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1715791825,verilog,,E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../project_1.gen/sources_1/ip/clk_wiz_0,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sim_1/new/newtb.vhd,1716298156,vhdl,,,,testbrench2,,,,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd,1716141428,vhdl,,,,mpg,,,,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd,1715790346,vhdl,,,,rom_color,,,,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd,1716221468,vhdl,,,,unitatecontrol1,,,,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/VRAM_1.vhd,1716298035,vhdl,,,,vram_1,,,,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/VRAM_TWO.vhd,1716289936,vhdl,,,,vram_two,,,,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/video_signal.vhd,1715790274,vhdl,,,,video_signal,,,,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/vram_four.vhd,1715794722,vhdl,,,,vram_four,,,,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/vram_three.vhd,1715793084,vhdl,,,,vram_three,,,,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT/PROIECT NOU/project_1/project_1.srcs/sim_1/new/testbrench.vhd,1716219705,vhdl,,,,testbrench,,,,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT/PROIECT NOU/project_1/project_1.srcs/sources_1/new/ControlUnit.vhd,1716219097,vhdl,,,,controlunit,,,,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT/PROIECT NOU/project_1/project_1.srcs/sources_1/new/UC_fara_vram.vhd,1716145406,vhdl,,,,unitatecontrol_novram,,,,,,,,
+E:/Facultate/SEMESTRUL2/PSN/PROIECT/PROIECT NOU/project_1/project_1.srcs/sources_1/new/testplacuta720p.vhd,1715792822,vhdl,,,,testplacuta720p,,,,,,,,

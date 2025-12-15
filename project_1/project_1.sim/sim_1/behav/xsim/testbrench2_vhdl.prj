@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/new/video_signal.vhd" \
+"../../../../project_1.srcs/sources_1/new/VRAM_1.vhd" \
+"../../../../project_1.srcs/sources_1/new/ROM_COLOR.vhd" \
+"../../../../project_1.srcs/sources_1/new/VRAM_TWO.vhd" \
+"../../../../project_1.srcs/sources_1/new/vram_three.vhd" \
+"../../../../project_1.srcs/sources_1/new/vram_four.vhd" \
+"../../../../project_1.srcs/sources_1/new/UnitateControl.vhd" \
+"../../../../project_1.srcs/sources_1/new/MPG.vhd" \
+"../../../../project_1.srcs/sim_1/new/newtb.vhd" \
+
+# Do not sort compile order
+nosort

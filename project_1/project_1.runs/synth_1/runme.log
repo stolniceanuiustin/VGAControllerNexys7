@@ -1,0 +1,573 @@
+
+*** Running vivado
+    with args -log UnitateControl1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source UnitateControl1.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source UnitateControl1.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 377.121 ; gain = 52.770
+Command: read_checkpoint -auto_incremental -incremental {E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/utils_1/imports/synth_1/testplacuta720p.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/utils_1/imports/synth_1/testplacuta720p.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top UnitateControl1 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11948
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1215.520 ; gain = 409.473
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'UnitateControl1' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:26]
+INFO: [Synth 8-3491] module 'MPG' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:7' bound to instance 'debouncer1' of component 'MPG' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'MPG' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:15]
+WARNING: [Synth 8-614] signal 'Q3' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:42]
+WARNING: [Synth 8-614] signal 'Q2' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:15]
+INFO: [Synth 8-3491] module 'MPG' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:7' bound to instance 'debouncer2' of component 'MPG' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:147]
+INFO: [Synth 8-3491] module 'MPG' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:7' bound to instance 'debouncer3' of component 'MPG' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:148]
+INFO: [Synth 8-3491] module 'MPG' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:7' bound to instance 'debouncer4' of component 'MPG' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:149]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.runs/synth_1/.Xil/Vivado-26528-Iustin-PC/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'clock_divider' of component 'clk_wiz_0' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.runs/synth_1/.Xil/Vivado-26528-Iustin-PC/realtime/clk_wiz_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'video_signal' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/video_signal.vhd:6' bound to instance 'video_signal_portmap' of component 'video_signal' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'video_signal' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/video_signal.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'video_signal' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/video_signal.vhd:17]
+INFO: [Synth 8-3491] module 'VRAM_1' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/VRAM_1.vhd:6' bound to instance 'vram111' of component 'VRAM_1' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'VRAM_1' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/VRAM_1.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'VRAM_1' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/VRAM_1.vhd:21]
+INFO: [Synth 8-3491] module 'VRAM_TWO' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/VRAM_TWO.vhd:6' bound to instance 'vram2' of component 'VRAM_TWO' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'VRAM_TWO' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/VRAM_TWO.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'VRAM_TWO' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/VRAM_TWO.vhd:21]
+INFO: [Synth 8-3491] module 'VRAM_three' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/vram_three.vhd:6' bound to instance 'vram3' of component 'VRAM_three' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'VRAM_three' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/vram_three.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'VRAM_three' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/vram_three.vhd:21]
+INFO: [Synth 8-3491] module 'VRAM_four' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/vram_four.vhd:6' bound to instance 'vram4' of component 'VRAM_four' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'VRAM_four' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/vram_four.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'VRAM_four' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/vram_four.vhd:21]
+INFO: [Synth 8-3491] module 'ROM_Color' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:4' bound to instance 'color' of component 'ROM_Color' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'ROM_Color' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:14]
+INFO: [Synth 8-226] default block is never used [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:31]
+WARNING: [Synth 8-614] signal 'R0' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'G0' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'B0' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'R1' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'G1' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'B1' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'R2' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'G2' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'B2' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'R3' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'G3' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'B3' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'ROM_Color' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:14]
+INFO: [Synth 8-226] default block is never used [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:245]
+WARNING: [Synth 8-614] signal 'IMGSelect' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:235]
+WARNING: [Synth 8-614] signal 'CLRSelect' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:235]
+INFO: [Synth 8-256] done synthesizing module 'UnitateControl1' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:26]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1401.496 ; gain = 595.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1401.496 ; gain = 595.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1401.496 ; gain = 595.449
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1401.496 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clock_divider'
+Finished Parsing XDC File [e:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clock_divider'
+Parsing XDC File [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/constraints.xdc]
+Finished Parsing XDC File [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/UnitateControl1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/UnitateControl1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1541.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1541.262 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1541.262 ; gain = 735.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  astept |                             0001 |                               00
+               asteptimg |                             0010 |                               01
+               asteptclr |                             0100 |                               10
+          afisareimagine |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Stare_reg' using encoding 'one-hot' in module 'UnitateControl1'
+WARNING: [Synth 8-327] inferring latch for variable 'Img_UE_reg' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:265]
+WARNING: [Synth 8-327] inferring latch for variable 'CLR_UE_reg' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:228]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:54 ; elapsed = 00:01:11 . Memory (MB): peak = 1541.262 ; gain = 735.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 33    
+	   2 Input   12 Bit       Adders := 1     
++---Registers : 
+	               81 Bit    Registers := 184   
+	               32 Bit    Registers := 14    
+	               12 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input   81 Bit        Muxes := 208   
+	   2 Input   32 Bit        Muxes := 38    
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 9     
+	   4 Input    4 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 23    
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+
+*** Running vivado
+    with args -log UnitateControl1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source UnitateControl1.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source UnitateControl1.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/utils_1/imports/synth_1/testplacuta720p.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/utils_1/imports/synth_1/testplacuta720p.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top UnitateControl1 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14920
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1214.988 ; gain = 409.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'UnitateControl1' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:26]
+INFO: [Synth 8-3491] module 'MPG' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:7' bound to instance 'debouncer1' of component 'MPG' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'MPG' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:15]
+WARNING: [Synth 8-614] signal 'Q3' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:42]
+WARNING: [Synth 8-614] signal 'Q2' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:15]
+INFO: [Synth 8-3491] module 'MPG' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:7' bound to instance 'debouncer2' of component 'MPG' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:147]
+INFO: [Synth 8-3491] module 'MPG' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:7' bound to instance 'debouncer3' of component 'MPG' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:148]
+INFO: [Synth 8-3491] module 'MPG' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/MPG.vhd:7' bound to instance 'debouncer4' of component 'MPG' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:149]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.runs/synth_1/.Xil/Vivado-18948-Iustin-PC/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'clock_divider' of component 'clk_wiz_0' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.runs/synth_1/.Xil/Vivado-18948-Iustin-PC/realtime/clk_wiz_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'video_signal' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/video_signal.vhd:6' bound to instance 'video_signal_portmap' of component 'video_signal' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'video_signal' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/video_signal.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'video_signal' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/video_signal.vhd:17]
+INFO: [Synth 8-3491] module 'VRAM_1' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/VRAM_1.vhd:6' bound to instance 'vram111' of component 'VRAM_1' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'VRAM_1' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/VRAM_1.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'VRAM_1' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/VRAM_1.vhd:21]
+INFO: [Synth 8-3491] module 'VRAM_TWO' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/VRAM_TWO.vhd:6' bound to instance 'vram2' of component 'VRAM_TWO' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'VRAM_TWO' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/VRAM_TWO.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'VRAM_TWO' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/VRAM_TWO.vhd:21]
+INFO: [Synth 8-3491] module 'VRAM_three' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/vram_three.vhd:6' bound to instance 'vram3' of component 'VRAM_three' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'VRAM_three' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/vram_three.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'VRAM_three' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/vram_three.vhd:21]
+INFO: [Synth 8-3491] module 'VRAM_four' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/vram_four.vhd:6' bound to instance 'vram4' of component 'VRAM_four' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'VRAM_four' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/vram_four.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'VRAM_four' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/vram_four.vhd:21]
+INFO: [Synth 8-3491] module 'ROM_Color' declared at 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:4' bound to instance 'color' of component 'ROM_Color' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'ROM_Color' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:14]
+INFO: [Synth 8-226] default block is never used [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:31]
+WARNING: [Synth 8-614] signal 'R0' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'G0' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'B0' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'R1' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'G1' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'B1' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'R2' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'G2' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'B2' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'R3' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'G3' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+WARNING: [Synth 8-614] signal 'B3' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'ROM_Color' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/ROM_COLOR.vhd:14]
+INFO: [Synth 8-226] default block is never used [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:245]
+WARNING: [Synth 8-614] signal 'IMGSelect' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:235]
+WARNING: [Synth 8-614] signal 'CLRSelect' is read in the process but is not in the sensitivity list [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:235]
+INFO: [Synth 8-256] done synthesizing module 'UnitateControl1' (0#1) [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:26]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1400.164 ; gain = 594.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1400.164 ; gain = 594.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1400.164 ; gain = 594.789
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1400.164 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clock_divider'
+Finished Parsing XDC File [e:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clock_divider'
+Parsing XDC File [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/constraints.xdc]
+Finished Parsing XDC File [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/UnitateControl1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/UnitateControl1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1526.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 1526.637 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1526.637 ; gain = 721.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  astept |                             0001 |                               00
+               asteptimg |                             0010 |                               01
+               asteptclr |                             0100 |                               10
+          afisareimagine |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Stare_reg' using encoding 'one-hot' in module 'UnitateControl1'
+WARNING: [Synth 8-327] inferring latch for variable 'Img_UE_reg' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:265]
+WARNING: [Synth 8-327] inferring latch for variable 'CLR_UE_reg' [E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.srcs/sources_1/new/UnitateControl.vhd:228]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:57 ; elapsed = 00:01:26 . Memory (MB): peak = 1526.637 ; gain = 721.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 33    
+	   2 Input   12 Bit       Adders := 1     
++---Registers : 
+	               81 Bit    Registers := 184   
+	               32 Bit    Registers := 14    
+	               12 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input   81 Bit        Muxes := 208   
+	   2 Input   32 Bit        Muxes := 38    
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 9     
+	   4 Input    4 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 23    
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][1]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][2]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][3]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][5]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][6]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][7]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][9]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][10]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][11]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][13]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][14]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][15]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][17]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][18]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][19]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][21]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][22]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][23]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][25]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][26]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][27]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][29]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][30]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][31]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][33]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][34]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][35]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][37]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][38]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][39]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][41]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][42]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][43]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][45]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][46]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][47]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][49]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][50]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][51]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][53]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][54]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][55]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][57]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][58]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][59]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][61]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][62]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][63]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][65]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][66]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][67]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][69]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][70]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][71]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][73]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][74]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][75]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][77]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][78]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[0][79]' (FDCE) to 'memory_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][1]' (FDCE) to 'memory_reg[8][2]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][2]' (FDCE) to 'memory_reg[8][3]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][3]' (FDCE) to 'memory_reg[8][5]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][5]' (FDCE) to 'memory_reg[8][6]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][6]' (FDCE) to 'memory_reg[8][7]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][7]' (FDCE) to 'memory_reg[8][9]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][9]' (FDCE) to 'memory_reg[8][10]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][10]' (FDCE) to 'memory_reg[8][11]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][11]' (FDCE) to 'memory_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][13]' (FDCE) to 'memory_reg[8][14]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][14]' (FDCE) to 'memory_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][15]' (FDCE) to 'memory_reg[8][17]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][17]' (FDCE) to 'memory_reg[8][18]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][18]' (FDCE) to 'memory_reg[8][19]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][19]' (FDCE) to 'memory_reg[8][21]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][21]' (FDCE) to 'memory_reg[8][22]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][22]' (FDCE) to 'memory_reg[8][23]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][23]' (FDCE) to 'memory_reg[8][25]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][25]' (FDCE) to 'memory_reg[8][26]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][26]' (FDCE) to 'memory_reg[8][27]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][27]' (FDCE) to 'memory_reg[8][29]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][29]' (FDCE) to 'memory_reg[8][30]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][30]' (FDCE) to 'memory_reg[8][31]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][31]' (FDCE) to 'memory_reg[8][33]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][33]' (FDCE) to 'memory_reg[8][34]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][34]' (FDCE) to 'memory_reg[8][35]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][35]' (FDCE) to 'memory_reg[8][37]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][37]' (FDCE) to 'memory_reg[8][38]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][38]' (FDCE) to 'memory_reg[8][39]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][39]' (FDCE) to 'memory_reg[8][41]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][41]' (FDCE) to 'memory_reg[8][42]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][42]' (FDCE) to 'memory_reg[8][43]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][43]' (FDCE) to 'memory_reg[8][45]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][45]' (FDCE) to 'memory_reg[8][46]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][46]' (FDCE) to 'memory_reg[8][47]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][47]' (FDCE) to 'memory_reg[8][49]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][49]' (FDCE) to 'memory_reg[8][50]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][50]' (FDCE) to 'memory_reg[8][51]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][51]' (FDCE) to 'memory_reg[8][53]'
+INFO: [Synth 8-3886] merging instance 'memory_reg[8][53]' (FDCE) to 'memory_reg[8][54]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\memory_reg[14][79] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\memory_reg[14][80] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\memory_reg[13][80] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\memory_reg[14][79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\memory_reg[15][80] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:17 ; elapsed = 00:04:09 . Memory (MB): peak = 1526.637 ; gain = 721.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:21 ; elapsed = 00:04:19 . Memory (MB): peak = 1526.637 ; gain = 721.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+info: optimization accepted worst group hill climbing move (-8879.7/oG. 594.0ps)
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:46 ; elapsed = 00:05:09 . Memory (MB): peak = 1554.340 ; gain = 748.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:53 ; elapsed = 00:05:19 . Memory (MB): peak = 1554.340 ; gain = 748.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:00 ; elapsed = 00:05:29 . Memory (MB): peak = 1554.340 ; gain = 748.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:00 ; elapsed = 00:05:29 . Memory (MB): peak = 1554.340 ; gain = 748.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:03 ; elapsed = 00:05:32 . Memory (MB): peak = 1554.340 ; gain = 748.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:03 ; elapsed = 00:05:32 . Memory (MB): peak = 1554.340 ; gain = 748.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:08 ; elapsed = 00:05:38 . Memory (MB): peak = 1554.340 ; gain = 748.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:08 ; elapsed = 00:05:38 . Memory (MB): peak = 1554.340 ; gain = 748.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |clk_wiz_0_bbox |     1|
+|2     |CARRY4         |   586|
+|3     |LUT1           |   240|
+|4     |LUT2           |  1363|
+|5     |LUT3           |  1848|
+|6     |LUT4           |  2988|
+|7     |LUT5           |  4164|
+|8     |LUT6           |  6087|
+|9     |MUXF7          |  1013|
+|10    |MUXF8          |    75|
+|11    |FDCE           |  7650|
+|12    |FDPE           |    49|
+|13    |FDRE           |   245|
+|14    |FDSE           |     4|
+|15    |LD             |     4|
+|16    |IBUF           |    12|
+|17    |OBUF           |    17|
++------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:08 ; elapsed = 00:05:38 . Memory (MB): peak = 1554.340 ; gain = 748.965
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:46 ; elapsed = 00:05:26 . Memory (MB): peak = 1554.340 ; gain = 622.492
+Synthesis Optimization Complete : Time (s): cpu = 00:03:08 ; elapsed = 00:05:39 . Memory (MB): peak = 1554.340 ; gain = 748.965
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.345 . Memory (MB): peak = 1554.340 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1678 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1554.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
+
+Synth Design complete, checksum: c575d05
+INFO: [Common 17-83] Releasing license: Synthesis
+164 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:16 ; elapsed = 00:06:01 . Memory (MB): peak = 1554.340 ; gain = 1143.738
+INFO: [Common 17-1381] The checkpoint 'E:/Facultate/SEMESTRUL2/PSN/PROIECT FINAL/project_1/project_1.runs/synth_1/UnitateControl1.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1554.340 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file UnitateControl1_utilization_synth.rpt -pb UnitateControl1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 28 14:23:27 2024...

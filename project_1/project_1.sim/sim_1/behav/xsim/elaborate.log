@@ -1,0 +1,33 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbrench2_behav xil_defaultlib.testbrench2 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.MPG [mpg_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=58.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture behavioral of entity xil_defaultlib.video_signal [video_signal_default]
+Compiling architecture behavioral of entity xil_defaultlib.VRAM_1 [vram_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.VRAM_TWO [vram_two_default]
+Compiling architecture behavioral of entity xil_defaultlib.VRAM_three [vram_three_default]
+Compiling architecture behavioral of entity xil_defaultlib.VRAM_four [vram_four_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM_Color [rom_color_default]
+Compiling architecture behavioral of entity xil_defaultlib.UnitateControl1 [unitatecontrol1_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbrench2
+Built simulation snapshot testbrench2_behav
